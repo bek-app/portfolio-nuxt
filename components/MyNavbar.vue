@@ -4,9 +4,10 @@
       <b-navbar-toggle target="nav-collapse" class="ml-auto"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav class="ml-auto">
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">Works </b-nav-item>
-          <b-nav-item href="#">Contact</b-nav-item>
-          <b-nav-item href="#">Blog</b-nav-item>
+          <NuxtLink class="my-link" to="#">Home </NuxtLink>
+          <NuxtLink class="my-link" to="#">Works</NuxtLink>
+          <NuxtLink class="my-link" to="#">Contact</NuxtLink>
+          <NuxtLink class="my-link" to="#">Blog</NuxtLink>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -24,7 +25,8 @@ export default Vue.extend({
 <style lang="scss">
 .navbar-light {
   .navbar-nav {
-    .nav-link {
+    .my-link {
+      margin-right: 15px;
       font-family: 'Heebo';
       font-style: normal;
       font-weight: 500;
